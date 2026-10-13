@@ -1,0 +1,22 @@
+{
+  "name": "shipdrift",
+  "version": "0.1.0",
+  "description": "Did you release what you merged? Finds merges with no tag, version bumps with no release, and docs pinning old builds.",
+  "license": "MIT",
+  "author": "Athalla Jovian Maharsa",
+  "homepage": "https://github.com/athallajovian9-cyber/shipdrift#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/athallajovian9-cyber/shipdrift.git"
+  },
+  "bugs": {
+    "url": "https://github.com/athallajovian9-cyber/shipdrift/issues"
+  },
+  "keywords": ["release", "versioning", "git", "tags", "changelog", "ci"],
+  "bin": {
+    "shipdrift": "bin/shipdrift.js"
+  },
+  "files": ["bin", "lib", "LICENSE"],
+  "engines": { "node": ">=16" },
+  "scripts": { "prepack": "node scripts/sync.js" }
+}
